@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(21,32,43);
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.nav-bar .nav-bar-link {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.nav-bar .nav-bar-link .nav-list {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: all 400ms;
+    padding: 0 20px;
+}
+
+.active {
+    background-color: #059862;
+    border-radius: 5px;
+}
