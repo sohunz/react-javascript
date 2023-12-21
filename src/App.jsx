@@ -3,6 +3,8 @@ import HomePage from "./components/HomePage";
 import Navbar from "./components/Header/Navbar";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
+import Card from './components/card/Card';
+import HomeGreeting from "./components/content_render/HomeGreeting";
 
 const App = () => {
     const routes = [
@@ -20,6 +22,16 @@ const App = () => {
             path: "/contact",
             title: "Contact",
             element: <ContactPage />,
+        },
+        {
+            path: "/card",
+            title: "Card",
+            element: <Card />,
+        },
+        {
+            path: "/content-render",
+            title: "Content Render",
+            element: <HomeGreeting />,
         },
     ];
 
