@@ -1,11 +1,11 @@
-import MyComponent from "./MyComponent"
+import CounterApp from "./CounterApp"
 
 
 
 const Hook = () => {
   return (
     <div>
-        <MyComponent />
+        <CounterApp />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./counter.css";
 
-const MyComponent = () => {
+const CounterApp = () => {
     const [count, setCount] = useState(0);
 
     const Increment = () => {
@@ -34,4 +34,4 @@ const MyComponent = () => {
     );
 };
 
-export default MyComponent;
+export default CounterApp;
