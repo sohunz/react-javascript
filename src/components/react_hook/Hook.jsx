@@ -1,13 +1,13 @@
-import CounterApp from "./CounterApp"
-
-
+import CounterApp from "./CounterApp";
+import OnChangeEvent from "./OnChangeEvent";
 
 const Hook = () => {
-  return (
-    <div>
-        <CounterApp />
-    </div>
-  )
-}
+    return (
+        <div>
+            <CounterApp />
+            <OnChangeEvent />
+        </div>
+    );
+};
 
-export default Hook
+export default Hook;
