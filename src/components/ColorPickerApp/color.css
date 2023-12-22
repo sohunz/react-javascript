@@ -1,0 +1,23 @@
+.color-display{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+}
+
+.select-color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-label {
+    padding-right: 10px;
+}

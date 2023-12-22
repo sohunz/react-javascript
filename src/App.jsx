@@ -5,6 +5,7 @@ import Card from './components/card/Card';
 import HomeGreeting from "./components/content_render/HomeGreeting";
 import CarList from "./components/list/carList";
 import Hook from "./components/react_hook/Hook";
+import ColorPicker from "./components/ColorPickerApp/ColorPicker";
 
 const App = () => {
     const routes = [
@@ -32,6 +33,11 @@ const App = () => {
             path: "/hook",
             title: "React Hook",
             element: <Hook />,
+        },
+        {
+            path: "/color-picker",
+            title: "Color Picker",
+            element: <ColorPicker />
         },
     ];
 
