@@ -4,6 +4,7 @@ import Navbar from "./components/Header/Navbar";
 import Card from './components/card/Card';
 import HomeGreeting from "./components/content_render/HomeGreeting";
 import CarList from "./components/list/carList";
+import Hook from "./components/react_hook/Hook";
 
 const App = () => {
     const routes = [
@@ -26,6 +27,11 @@ const App = () => {
             path: "/list",
             title: "List",
             element: <CarList />,
+        },
+        {
+            path: "/hook",
+            title: "React Hook",
+            element: <Hook />,
         },
     ];
 

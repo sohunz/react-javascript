@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 50px 0;
+    border-radius: 10px;
+    margin: auto;
+}
+.count {
+    font-size: 100px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
