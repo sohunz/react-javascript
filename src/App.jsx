@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Header/Navbar";
-import AboutPage from "./components/AboutPage";
-import ContactPage from "./components/ContactPage";
 import Card from './components/card/Card';
 import HomeGreeting from "./components/content_render/HomeGreeting";
+import CarList from "./components/list/carList";
 
 const App = () => {
     const routes = [
@@ -12,16 +11,6 @@ const App = () => {
             path: "/",
             title: "Home",
             element: <HomePage />,
-        },
-        {
-            path: "/about",
-            title: "About",
-            element: <AboutPage />,
-        },
-        {
-            path: "/contact",
-            title: "Contact",
-            element: <ContactPage />,
         },
         {
             path: "/card",
@@ -33,6 +22,11 @@ const App = () => {
             title: "Content Render",
             element: <HomeGreeting />,
         },
+        {
+            path: "/list",
+            title: "List",
+            element: <CarList />,
+        },
     ];
 
     const myRoutes = routes.map((item) => (
@@ -41,7 +35,7 @@ const App = () => {
 
     return (
         <BrowserRouter>
-            <Navbar routes={routes} />
+            <Navbar routes={routes}/>
             <Routes>{myRoutes}</Routes>
         </BrowserRouter>
     );
