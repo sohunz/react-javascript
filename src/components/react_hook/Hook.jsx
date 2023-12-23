@@ -1,6 +1,7 @@
 import CounterApp from "./CounterApp";
 import OnChangeEvent from "./OnChangeEvent";
-import MyComponent from './MyComponent'
+import MyComponent from "./MyComponent";
+import LearnUseEffect from "./LearnUseEffect";
 
 const Hook = () => {
     return (
@@ -8,6 +9,7 @@ const Hook = () => {
             <CounterApp />
             <OnChangeEvent />
             <MyComponent />
+            <LearnUseEffect />
         </div>
     );
 };
