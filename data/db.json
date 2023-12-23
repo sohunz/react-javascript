@@ -1,0 +1,22 @@
+{
+    "blogs" : [
+        {
+            "title" : "My First Blog",
+            "body" : "I love programming...",
+            "author" : "Jasmine",
+            "id" : 1
+        },
+        {
+            "title" : "Good Morning All Friend",
+            "body" : "Today I want to learn React JS course...",
+            "author" : "Jesica",
+            "id" : 2
+        },
+        {
+            "title" : "A Day In My Life as Web Developer",
+            "body" : "Today I'm gonna tell you all how web developer work...",
+            "author" : "Nosh",
+            "id" : 3
+        }
+    ]
+}
