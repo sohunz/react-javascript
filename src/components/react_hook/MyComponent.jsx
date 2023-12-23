@@ -15,8 +15,8 @@ const MyComponent = () => {
     }
 
   return (
-    <div>
-        <p>{score}</p>
+    <div className="container">
+        <p style={{fontSize: '25px'}}>{score}</p>
         <button onClick={myScore}>update</button>
     </div>
   )

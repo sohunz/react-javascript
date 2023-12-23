@@ -6,6 +6,7 @@ import HomeGreeting from "./components/content_render/HomeGreeting";
 import CarList from "./components/list/carList";
 import Hook from "./components/react_hook/Hook";
 import ColorPicker from "./components/ColorPickerApp/ColorPicker";
+import TodoList from "./components/TodoListApp/TodoList";
 
 const App = () => {
     const routes = [
@@ -38,6 +39,11 @@ const App = () => {
             path: "/color-picker",
             title: "Color Picker",
             element: <ColorPicker />
+        },
+        {
+            path: "/todo",
+            title: "Todo List",
+            element: <TodoList />
         },
     ];
 

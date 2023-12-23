@@ -1,0 +1,35 @@
+.todo-title {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.todo-input {
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+}
+.list-control {
+    width: 530px;
+    list-style-type: none;
+}
+.list-todo {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    
+}
+
+.todo-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-delete {
+    background-color: rgb(215, 10, 10);
+}
