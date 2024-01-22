@@ -7,6 +7,7 @@ import CarList from "./components/list/carList";
 import Hook from "./components/react_hook/Hook";
 import ColorPicker from "./components/ColorPickerApp/ColorPicker";
 import TodoList from "./components/TodoListApp/TodoList";
+import LearnProps from "./components/props/LearnProps";
 
 const App = () => {
     const routes = [
@@ -44,6 +45,11 @@ const App = () => {
             path: "/todo",
             title: "Todo List",
             element: <TodoList />
+        },
+        {
+            path: "/props",
+            title: "Props",
+            element: <LearnProps />
         },
     ];
 
