@@ -8,6 +8,7 @@ import Hook from "./components/react_hook/Hook";
 import ColorPicker from "./components/ColorPickerApp/ColorPicker";
 import TodoList from "./components/TodoListApp/TodoList";
 import LearnProps from "./components/props/LearnProps";
+import FetchApi from "./components/fetch_api/FetchApi";
 
 const App = () => {
     const routes = [
@@ -50,6 +51,11 @@ const App = () => {
             path: "/props",
             title: "Props",
             element: <LearnProps />
+        },
+        {
+            path: "/fetch-api",
+            title: "Fetch API",
+            element: <FetchApi />
         },
     ];
 
