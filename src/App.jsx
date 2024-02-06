@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Header/Navbar";
-import Card from './components/card/Card';
+import Card from "./components/card/Card";
 import HomeGreeting from "./components/content_render/HomeGreeting";
 import CarList from "./components/list/carList";
 import Hook from "./components/react_hook/Hook";
@@ -9,6 +9,8 @@ import ColorPicker from "./components/ColorPickerApp/ColorPicker";
 import TodoList from "./components/TodoListApp/TodoList";
 import LearnProps from "./components/props/LearnProps";
 import FetchApi from "./components/fetch_api/FetchApi";
+import Home from "./components/Blog/Home";
+import BlogDetail from "./components/Blog/BlogDetail";
 
 const App = () => {
     const routes = [
@@ -40,22 +42,27 @@ const App = () => {
         {
             path: "/color-picker",
             title: "Color Picker",
-            element: <ColorPicker />
+            element: <ColorPicker />,
         },
         {
             path: "/todo",
             title: "Todo List",
-            element: <TodoList />
+            element: <TodoList />,
         },
         {
             path: "/props",
             title: "Props",
-            element: <LearnProps />
+            element: <LearnProps />,
         },
         {
             path: "/fetch-api",
             title: "Fetch API",
-            element: <FetchApi />
+            element: <FetchApi />,
+        },
+        {
+            path: "/blogs",
+            title: "Blogs",
+            element: <Home />,
         },
     ];
 
@@ -65,8 +72,11 @@ const App = () => {
 
     return (
         <BrowserRouter>
-            <Navbar routes={routes}/>
+            <Navbar routes={routes} />
             <Routes>{myRoutes}</Routes>
+            <Routes>
+                <Route path="/blogs/:id" element={<BlogDetail />} />
+            </Routes>
         </BrowserRouter>
     );
 };
