@@ -11,6 +11,7 @@ import LearnProps from "./components/props/LearnProps";
 import FetchApi from "./components/fetch_api/FetchApi";
 import Home from "./components/Blog/Home";
 import BlogDetail from "./components/Blog/BlogDetail";
+import Form from "./components/form/Form";
 
 const App = () => {
     const routes = [
@@ -63,6 +64,11 @@ const App = () => {
             path: "/blogs",
             title: "Blogs",
             element: <Home />,
+        },
+        {
+            path: "/form",
+            title: "Form",
+            element: <Form />,
         },
     ];
 
