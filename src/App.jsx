@@ -12,6 +12,7 @@ import FetchApi from "./components/fetch_api/FetchApi";
 import Home from "./components/Blog/Home";
 import BlogDetail from "./components/Blog/BlogDetail";
 import Form from "./components/form/Form";
+import UserList from "./components/user_list/UserList";
 
 const App = () => {
     const routes = [
@@ -69,6 +70,11 @@ const App = () => {
             path: "/form",
             title: "Form",
             element: <Form />,
+        },
+        {
+            path: "/users",
+            title: "Users",
+            element: <UserList />,
         },
     ];
 
